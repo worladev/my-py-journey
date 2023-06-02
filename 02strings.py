@@ -11,6 +11,14 @@ secondWord = "Watch me."
 
 print(firstWord + secondWord)
 
+# Multiline string
+address = """422 Long Lane Road
+Newtown
+Jungle Avenue"""
+
+print(address)
+
+
 # 8.2 len() function
 count = []
 for i in range(len(secondWord)):
@@ -69,7 +77,13 @@ print(count)
 #ex page 75
 
 # 8.8 String methods
-# .upper()
+    # .upper()
+    # .lower()
+    # len()
+    # .capitalize()
+    # .strip()
+    # .title()
+    #
 new_word = word.upper()
 
 # 8.9 The in operator
