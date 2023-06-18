@@ -4,26 +4,34 @@
 # The values in a list are called elements.
 # A list within another list is nested
 
-cheeses = ['Cheddar', 'Edam', 'Gouda']
-numbers = [44, 234]
-empty = []
+# Two ways to create a list
+# in-built list() method
+# square bracket []
+
+# cheeses = list(['Cheddar', 'Edam', 'Gouda'])
+# numbers = list([44, 2, 34])
+# mix_list = list([1, 2, 4, "Coding", "CWB", True, False])
+
+names = ['Cheddar', 'Edem', 'Gouda']
+numbers = [44, 2, 34]
+mix_list = [1, 2, 4, "Coding", "CWB", True, False]
 
 #List are mutable
-cheeses[0]
+names[0]
 
 numbers[1] = 5
 
-# the in operator
-5 in numbers
-
-'Edam' in cheeses
 
 ## 10.3 TRAVERSING A LIST
-for cheese in cheeses:
-    print(cheese) # to read elements
+# the in operator checks and return true or false
+5 in numbers
 
-# one way is to use range and len
-# to write or update elements
+'Edem' in names
+
+for name in names:
+    print(name) # to read elements
+
+# one way is to use range and len to write or update elements
 for i in range(len(numbers)):
     numbers[i] = numbers[i] * 2
 
@@ -152,10 +160,3 @@ print(letters)
     # most list methods modify the argument and return None
     # it is the opposite for string methods
     
-
-
-
-
-
-
-
