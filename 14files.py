@@ -1,16 +1,21 @@
+'''
+2 file handling functions in python
+open -- use for reading, writing and creating files accepts two arguments
 
-### 2 file handling functions in python
-    # open -- use for reading, writing and creating files
-        # accepts two arguments
-        # open(<FILE_NAME> <FILE_LOCATION>, <MODE>)
-            # the mode indicate what action is required such as reading, writing or creating
-            # also specifies if you want the output in text or binary format.
-            # MODE inclde   'r' - open and read (text format)
-            #               'rb' - open and read (binary format)
-            #               'r+' -open for both reading and writing
-            #               'w' -open for writing (overides the existing file)
-            #               'a' -open for editing or appending data
-    
+open(<FILE_NAME><FILE_LOCATION>, <MODE>)
+    the mode indicate what action is required such as reading, writing or creating
+    also specifies if you want the output in text or binary format.
+            
+    MODE inclde 'r' -open and read (text format)
+                'rb'-open and read (binary format)
+                'r+'-open for both reading and writing
+                'w' -open for writing (overides the existing file)
+                'w+'-opens a file for both writing and reading. Overwrites the existing
+                    file if the file exists. If the file does not exist, it creates
+                    a new file for reading and writing.
+                'a' -open for editing or appending data
+''' 
+
     # close -- use for closing the openned file connection - no arguments
 
     # with open('testing.txt', 'r') as file -- opens and after working with file closes
@@ -20,10 +25,9 @@
 file = open('txtFiles/meta_file.txt', mode='r')
 data = file.readline()
 print(data)
-
 file.close()
 
-
+### Good way to open and read/write to a file.
 with open('txtFiles/myfile.txt', mode='r') as meta_file:
     worla = meta_file.readline()
 
