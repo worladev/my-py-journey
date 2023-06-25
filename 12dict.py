@@ -11,6 +11,15 @@ eng2sp = dict()
 eng2sp['one'] = 'uno'
 print(eng2sp)
 
+# dictionary methods
+    # .items() --> using this method gives a tuple of all the items in the dictionary
+                    # and can be unpacked into a key, value pair.
+    # .keys()  --> gives access to all the keys in the dictionary
+    # .pop(key) --> removes 
+    # .popitem() --> removes and return the last key, value pair as a tuple.
+    # .get(key) --> 
+
+
 # the len(value) function works on dictionaries
 # the in operator works on dictionaries; it returns the number of key-value pairs
 
