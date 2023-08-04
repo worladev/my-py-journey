@@ -46,3 +46,18 @@ if is_weather_sunny and is_food_ready:
 else:
     print("You cannot go on a picnic!.")
 
+'''
+Disjunction (OR):
+Real-world Example: A student can choose to study either French (P) or Spanish (Q) as a foreign language.
+Coding Application: "OR" in coding allows for multiple possibilities, and the code proceeds if at least one condition is true.
+
+# P: student choose French
+# Q student choose French
+'''
+is_french_student = False
+is_spanish_student = False
+if is_french_student or is_spanish_student:
+    print("You are studying a foreign language!")
+else:
+    print("You are not studying a foreign language!.")
+
