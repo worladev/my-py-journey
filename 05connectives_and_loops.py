@@ -28,3 +28,21 @@ if is_train_tix_booked and is_weather_clear:
     print("You can go on a trip")
 else:
     print("You cannot go on a trip")
+
+
+'''
+Real-world Example:
+To go on a picnic, both the weather should be sunny (P) and the food should be ready (Q).
+Coding Application: In coding, "AND" is used to create conditional statements where both
+conditions must be true for an action to occur.
+
+# P: the weather should be sunny
+# Q: the food should be ready
+'''
+is_weather_sunny = False
+is_food_ready = False
+if is_weather_sunny and is_food_ready:
+    print("You can go on a picnic!")
+else:
+    print("You cannot go on a picnic!.")
+
