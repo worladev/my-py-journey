@@ -61,3 +61,26 @@ if is_french_student or is_spanish_student:
 else:
     print("You are not studying a foreign language!.")
 
+'''
+Real-world Example: For an elective course, a student can choose to take either Chemistry or Physics (P)
+and Math or English as a core course
+Coding Application: In coding, "OR" allows programmers to provide multiple options or conditions,
+and the code proceeds if at least one condition is true.
+
+P: student choose Chemistry
+Q: student choose Physics
+R: student choode Math
+S: student choose English
+
+Note: It is important to break compound statement into smaller manageable statements
+'''
+is_chemistry_student = False
+is_physics_student = True
+is_math_student = True
+is_english_student = False
+
+if (is_chemistry_student or is_physics_student) and (is_math_student or is_english_student):
+    print("Your course selection is complete")
+else:
+    print("Your course selection is incomplete!.")
+
