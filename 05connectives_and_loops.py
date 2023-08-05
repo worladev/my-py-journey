@@ -99,3 +99,35 @@ if not is_10am_breakfast:
 else:
     print("Breakfast served at 10am!.")
 
+
+'''
+Section 2
+Applying Connectives to Coding Questions
+
+Scenario: Voting Eligibility Checker
+Exercise:
+Explanation: In this example, we use the "AND" connective to ensure both age and citizenship are
+met before declaring a person eligible to vote.
+'''
+age = 18
+citizen = True
+if age >= 18 and citizen:
+    print("You are eligible to vote!.")
+else:
+    print("You are not eligible to vote.")
+
+
+'''
+Scenario: Fruit Shopping
+Explanation: Here, the "OR" connective allows the code to check if the fruit matches any of
+the specified options to decide whether it is available for purchase.
+
+'''
+fruit = "apple"
+budget = 20
+
+if fruit == "apple" or fruit == "banana" or fruit == "orange":
+    print("You can buy this fruit.")
+else:
+    print("This fruit is not available.")
+
