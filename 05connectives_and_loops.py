@@ -131,3 +131,32 @@ if fruit == "apple" or fruit == "banana" or fruit == "orange":
 else:
     print("This fruit is not available.")
 
+
+'''
+Scenario: Discount Calculation
+Explanation: This code uses the "AND" connective to apply a 10% discount only if the customer
+purchases three or more items with a total cost exceeding $100.
+'''
+items = 5
+total_cost = 200
+if items >= 3 and total_cost > 100:
+    discount = total_cost * 0.1
+    final_cost = total_cost - discount
+else:
+    final_cost = total_cost
+print("Your final cost is: " + str(final_cost))
+
+'''
+Scenario: Age Group Classifier
+Explanation: In this example, the "AND" connective is used to define the age range for adults
+(between 18 and 64) as a logical condition.
+'''
+age = 30
+
+if age < 18:
+    group = "Child"
+elif age >= 18 and age < 65:
+    group = "Adult"
+else:
+    group = "Senior"
+print("You belong to the ", group, "group.")
