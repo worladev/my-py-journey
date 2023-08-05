@@ -84,3 +84,18 @@ if (is_chemistry_student or is_physics_student) and (is_math_student or is_engli
 else:
     print("Your course selection is incomplete!.")
 
+
+'''
+Negation (NOT):
+Real-world Example: A restaurant sign reads: "We do NOT serve breakfast after 10:00 AM."
+Coding Application: "NOT" is used to reverse the truth value of a condition. For example,
+"IF NOT raining THEN go to the park."
+
+P: we serve breakfast at 10pm
+'''
+is_10am_breakfast = True
+if not is_10am_breakfast:
+    print("Breakfast not served at 10am!")
+else:
+    print("Breakfast served at 10am!.")
+
