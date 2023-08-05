@@ -176,3 +176,38 @@ else:
     print("The weather is clear, No need for and umbrella.")
 
 
+
+'''
+SECTION 3 (TASKS)
+Logical Connectives in Decision Making
+
+*** Your task is to use your understanding of connectives to solve the below problems.
+Remember to make your submissions using colab ***
+
+Scenario: Weekend Plans
+Exercise:
+Write a Python program that takes two inputs from the user:
+"Is it Saturday?" (sat) and "Is it Sunday?" (sun). If either of these inputs is true, the program should
+display "Let's have fun!" Otherwise, it should display "Weekdays are for work."
+
+TASK 1
+'''
+
+sat = input("Is it Saturday? (enter yes/no): ")
+if sat == 'yes':
+    it_is_sat = True
+else:
+    it_is_sat = False
+
+sun = input("Is it Sunday? (enter yes/no): ")
+if sun == 'yes':
+    it_is_sun = True
+else:
+    it_is_sun = False
+
+
+if it_is_sat or it_is_sun:
+    print("Let's have fun!")
+else:
+    print("Weekdays are for work.")
+
