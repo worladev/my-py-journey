@@ -160,3 +160,19 @@ elif age >= 18 and age < 65:
 else:
     group = "Senior"
 print("You belong to the ", group, "group.")
+
+
+'''
+Scenario: Weather Condition Checker
+Explanation: Here, "OR" connective is used to check whether it's raining (weather == "rainy") or
+if the person already has an umbrella (umbrella is True) before advising to take an umbrella.
+'''
+weather = "rainy"
+unbrella = True
+
+if weather == "rainy" or unbrella:
+    print("Take an umbrella with you.")
+else:
+    print("The weather is clear, No need for and umbrella.")
+
+
