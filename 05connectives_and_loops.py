@@ -240,3 +240,37 @@ if is_a_student or is_a_senior_citizen:
 else:
     print("No discount available.")
 
+
+'''
+TASK 3
+
+Scenario: Password Verification
+Exercise:
+Write a Python program that asks the user to enter a password. If the password matches "Secret123,"
+the program should display "Access granted." Otherwise, it should display "Access denied."
+'''
+correct_password = "Secret123"
+
+passw = input("Enter your password: ")
+if passw == correct_password:
+    print("Access granted")
+else:
+    print("Access denied")
+
+
+'''
+TASK 4
+
+Scenario: Temperature Classification
+Exercise:
+Write a Python program that takes the temperature as input. If the temperature is less than 0 degrees
+Celsius OR greater than 30 degrees Celsius, the program should display "Extreme weather conditions.
+Stay indoors." Otherwise, it should display "Enjoy the day!"
+'''
+temp = int(input("Enter temperature: "))
+if temp < 0 or temp > 30:
+    print("Exteme weather conditions. Stay indoors.")
+else:
+    print("Enjoy the da!")
+
+
