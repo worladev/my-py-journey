@@ -274,3 +274,124 @@ else:
     print("Enjoy the da!")
 
 
+'''
+LOOPS
+Understanding the Need for Loops in Coding
+
+Loops are indispensable tools in programming that allow us to execute a set of instructions repeatedly.
+This lecture introduces entry-level students to the concept of loops, discusses when and why loops are
+needed in coding, and presents examples of common real-world scenarios where loops are essential.
+
+1. Why Do We Need Loops?
+Loops provide an efficient way to perform repetitive tasks in programming.They save time and effort by
+automating tasks that would otherwise require manual repetition. Loops are used to process collections
+of data, such as lists or arrays.
+
+2. When Do We Use Loops?
+Loops are ideal when dealing with iterative processes, such as iterating through a list of names, numbers,
+or records. When performing calculations that require multiple iterations or successive changes to a
+variable's value, loops become crucial. Loops are employed when working with data structures that require
+traversal, searching, or filtering.
+
+3. Real-World Examples of Loop Application
+a) Calculating the Sum of Numbers:
+Given a list of numbers, use a loop to calculate their sum and display the result.
+
+b) Displaying Multiplication Table:
+Create a loop that prints the multiplication table of a given number up to a specified limit.
+
+c) Validating User Input:
+Use a loop to repeatedly prompt the user for valid input until the correct data is provided.
+
+Page 2: Basic Structure of Loops
+Loop Structure
+This section explores the basic structure of loops, focusing on entry-level loop constructs and the
+concept of the terminating condition. Students will learn the fundamentals of "for" loops and
+"while" loops, which are commonly used in coding.
+
+1. For Loops
+For loops are used when the number of iterations is known beforehand.
+
+The basic structure of a for loop:
+for variable in sequence:
+	# Code block to be executed on each iteration
+
+The loop iterates through each element in the sequence, and the specified code block is executed for
+each iteration.
+
+2. While Loops
+While loops are used when the number of iterations is not known in advance, and the loop continues
+until a specified condition becomes false.
+
+The basic structure of a while loop:
+while condition:
+	# Code block to be executed on each iteration
+
+The loop continues as long as the condition remains true, and it terminates once the condition becomes
+false.
+
+
+
+Examples and Practical Exercises
+This page includes practical coding examples and exercises to solidify students' understanding of loops.
+These exercises will apply the concepts learned and challenge students to create their own loop solutions.
+
+1. Example: Sum of Numbers
+Task: Calculate the sum of all numbers from 1 to a given positive integer.
+'''
+# Using for loop
+num = int(input("Enter a positive integer: "))
+sum = 0
+for i in range(1, num + 1):
+    sum += i
+print("Sum of numbers from 1 to", num, "is: ", sum)
+
+'''
+2. Example: Displaying Multiplication Table
+Task: Print the multiplication table of a given number up to a specified limit.
+'''
+# Using while loop
+num = int(input("Enter the number for multiplication table: "))
+limit = int(input("Enter the limit for the table: "))
+i = 1
+while i <= limit:
+    result = num * i
+    print(num, "x", i, "=", result)
+    i += 1
+
+'''
+3. Exercise: Fibonacci Series
+Task: Generate the Fibonacci series up to a given number.
+'''
+# Using for loop
+n = int(input("Enter the number of terms in the Fibonacci series: "))
+a, b = 0, 1
+for _ in range(n):
+    print(a, end=" ")
+    a, b = b, a + b
+
+
+'''
+4. Exercise: Guessing Game
+Task: Implement a simple guessing game using a while loop where the user has to guess a secret number.
+'''
+import random
+secret_number = random.randint(1, 100)
+guess = 0
+
+while guess != secret_number:
+    guess = int(input("Guess the secret number (1-100): "))
+    if guess < secret_number:
+        print("Try again! The secret number is higher.")
+    elif guess > secret_number:
+        print("Try again! The secrete number is lower.")
+    else:
+        print("Congratulations! You guessed the secret number!")
+
+'''
+Loops are essential tools in programming, enabling us to solve repetitive tasks efficiently.
+By understanding the concept of loops, the basic structure, and how to determine when to use them,
+entry-level students can tackle a wide range of coding challenges and explore the endless possibilities
+of programming. With practice and application, students will gain confidence in using loops to solve
+complex problems and build valuable coding skills.
+'''
