@@ -22,7 +22,7 @@ function return false.
 a single cumulative value.
 
 SYNTAX: map(function, iterable[, iterable1, iterable2,..., iterableN])
-            -function is any type of python callable (takes and argument and returns a concrete and useful value.)
+            ==>function -- any type of python callable that takes an argument and returns a concrete and useful value.
 '''
 # in-built tranformation function
 
@@ -46,4 +46,14 @@ words = ["Come here", "Welcome", "Hello Python"]
 word_len = list(map(len, words))
 print(word_len)
 
+
+# user defined transformation function
+def square(number):
+    return number ** 2
+
+numbers = [1, 2, 3, 4, 5]
+
+squared = list(map(square, numbers))
+
+print(squared)
 
