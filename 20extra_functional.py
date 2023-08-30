@@ -76,12 +76,20 @@ title = list(map(str.title, string_list))
 #implement using sub() regular expression function in the re module
 import re
 
-def remove_punct(word):
+def remove_punctuation(word):
     return re.sub(r'[!?.:;,"()-]', "", word)
 
-print(remove_punct("...!Python."))
+print(remove_punctuation("...!Python."))
 
+#using map() to remove punctuation from a list of words
+text = '''Some people, when confronted with a problem, think
+"I know, I'll use regular expressions."
+Now they have two problems. Jamie Zawinski'''
 
+words = text.split()
+
+remove_punct = list(map(remove_punctuation, words))
+print(remove_punct)
 
 
 
