@@ -71,6 +71,20 @@ lower = list(map(str.lower, string_list))
 title = list(map(str.title, string_list))
 
 
+# ==> Removing Punctuation
+#a custom function that removes punctuation using regular expression
+#implement using sub() regular expression function in the re module
+import re
+
+def remove_punct(word):
+    return re.sub(r'[!?.:;,"()-]', "", word)
+
+print(remove_punct("...!Python."))
+
+
+
+
+
 # ==> user defined transformation function
 def square(number):
     return number ** 2
