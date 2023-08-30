@@ -24,6 +24,7 @@ a single cumulative value.
 SYNTAX: map(function, iterable[, iterable1, iterable2,..., iterableN])
             ==>function -- any type of python callable that takes an argument and returns a concrete and useful value.
 '''
+
 # ==> in-built tranformation function
 
 #Example
@@ -58,6 +59,15 @@ power = list(map(pow, l1, l2))
 print(power)
 
 
+# ==> Transforming iterables of strings with map()
+#using str method
+string_list = ["processing", "strings", "with", "map"]
+capitalize = list(map(str.capitalize, string_list))
+
+
+
+
+
 # ==> user defined transformation function
 def square(number):
     return number ** 2
@@ -71,3 +81,5 @@ print(squared)
 #or using lambda
 squared = list(map(lambda num: num ** 2, numbers2))
 print(squared)
+
+
