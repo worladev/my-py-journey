@@ -64,8 +64,11 @@ print(power)
 string_list = ["processing", "strings", "with", "map"]
 capitalize = list(map(str.capitalize, string_list))
 
+upper = list(map(str.upper, string_list))
 
+lower = list(map(str.lower, string_list))
 
+title = list(map(str.title, string_list))
 
 
 # ==> user defined transformation function
