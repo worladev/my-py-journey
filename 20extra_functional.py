@@ -71,29 +71,8 @@ lower = list(map(str.lower, string_list))
 title = list(map(str.title, string_list))
 
 
-# ==> Removing Punctuation
-#a custom function that removes punctuation using regular expression
-#implement using sub() regular expression function in the re module
-import re
 
-def remove_punctuation(word):
-    return re.sub(r'[!?.:;,"()-]', "", word)
-
-print(remove_punctuation("...!Python."))
-
-#using map() to remove punctuation from a list of words
-text = '''Some people, when confronted with a problem, think
-"I know, I'll use regular expressions."
-Now they have two problems. Jamie Zawinski'''
-
-words = text.split()
-
-remove_punct = list(map(remove_punctuation, words))
-print(remove_punct)
-
-
-
-# ==> user defined transformation function
+# ==> user defined transformation function <== #
 def square(number):
     return number ** 2
 
@@ -106,5 +85,70 @@ print(squared)
 #or using lambda
 squared = list(map(lambda num: num ** 2, numbers2))
 print(squared)
+
+
+# ==> Removing Punctuation
+#a custom function that removes punctuation using regular expression
+#implement using sub() regular expression function in the re module
+import re
+
+#custom function to remove punctuation
+def remove_punctuation(word):
+    return re.sub(r'[!?.:;,"()-]', "", word)
+
+print(remove_punctuation("...!Python."))
+
+#using map() to remove punctuation from a list of words
+text = '''Some people, when confronted with a problem, think
+"I know, I'll use regular expressions."
+Now they have two problems. Jamie Zawinski'''
+
+#map implementation
+words = text.split()
+remove_punct = list(map(remove_punctuation, words))
+print(remove_punct)
+
+
+# ==> Implementing a Caesar Cipher Algorithm
+'''
+Encoding messages by shifting letter by a number of letters
+Example: Original alphabet ==> abcdefghijklmnopqrstuvwxyz
+         Rotated b 3 ==> defghijklmnopqrstuvwxyzabc
+Sample code
+'''
+#cipher transformation function
+def c_cipher(char):
+    rot_by = 3
+    char = char.lower()
+    alphabet = "abcdefghijklmnopqrstuvwxyz"
+    
+    if char not in alphabet:
+        return char
+    
+    rotated_pos = ord(char) + rot_by
+    #if rotated value is in the alphabet
+    if rotated_pos <= ord(alphabet[-1]):
+        return chr(rotated_pos)
+    #if rotated value goes beyound the alphabet
+    return chr(rotated_pos - len(alphabet))
+
+#map implementation
+message = "".join(map(c_cipher, "The secret of all time."))
+print(message)
+
+
+## ===>Transforming Iterables of Numbers With Python's map()<=== ##
+# Using maths operations
+
+#power transformation function
+def powers(x):
+    return x**2, x**3
+
+numbers = [1, 2, 3, 4]
+
+pow = list(map(powers, numbers))
+
+#More in the future
+
 
 
